@@ -1,0 +1,22 @@
+function sortItOut(array){
+  let arrEven = []
+ let arrOdd = []
+
+  
+  for(let i=0;i<array.length;i++){
+    let floored = Math.floor(array[i])
+    if(floored%2===0){
+      arrEven.push(array[i])
+    }else{
+      arrOdd.push(array[i])
+    }
+  }
+  
+  arrEven.sort((a,b)=> b-a)
+   arrOdd.sort((a,b)=> a-b)
+  
+return arrOdd.concat(arrEven)
+  
+
+
+}
