@@ -1,0 +1,16 @@
+var humanYearsCatYearsDogYears = function(humanYears) {
+  
+  let cat =15;
+  let dog = 15;
+  if(humanYears === 1){
+    return[1,cat,dog]
+  }else if(humanYears===2){
+    return [2,cat+9,dog+9]
+  }else{
+     return [
+        humanYears,
+        24 + (humanYears - 2) * 4,  // 24 (первые 2 года) + 4 за каждый последующий
+        24 + (humanYears - 2) * 5   // 24 (первые 2 года) + 5 за каждый последующий
+    ];
+  }
+}
