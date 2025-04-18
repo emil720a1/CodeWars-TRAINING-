@@ -1,0 +1,13 @@
+function factorial(num) {
+    // 0! и 1! равны 1 по математическому определению
+    if (num === 0 || num === 1) {
+        return 1;
+    }
+    
+    // Умножаем num на все числа меньше него до 1
+    for (var i = num - 1; i >= 1; i--) {
+        num *= i; // То же, что num = num * i
+    }
+    
+    return num;
+}
