@@ -1,0 +1,7 @@
+function derive(coefficient,exponent) {
+  let a = Math.pow(coefficient,exponent)
+
+  if(a){
+   return `${coefficient*exponent}x^${exponent-1}`
+  }
+}
