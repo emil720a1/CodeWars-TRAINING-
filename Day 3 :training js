@@ -1,0 +1,15 @@
+function squareDigits(num){
+
+    let a = (String(num).split(""))
+    console.log(a)
+    let b = a.map((a) => Math.pow(a,2)).join("")
+    console.log(b)
+
+
+    return parseInt(b)
+}
+
+
+
+let a = 3212;
+console.log(squareDigits(a));
