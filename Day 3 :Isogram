@@ -1,0 +1,13 @@
+function isIsogram(str) {
+    const letters = str.toLowerCase().split('');
+    const counter = {};
+
+    for (const letter of letters) {
+        counter[letter] = (counter[letter] || 0) + 1;
+        if (counter[letter] === 2) {
+            return false;
+        }
+    }
+
+    return true;
+}
