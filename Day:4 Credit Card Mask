@@ -1,0 +1,13 @@
+// return masked string
+function maskify(cc) {
+    let b = cc.slice(-4)
+
+
+    if(cc.length>=4){
+        return  '#'.repeat(cc.length -4 ) + b;
+    }else if(cc.length===1){
+        return '#'.repeat(cc.length -1 ) + b;
+    }
+
+
+}
