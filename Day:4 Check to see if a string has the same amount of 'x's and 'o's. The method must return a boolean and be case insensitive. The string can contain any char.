@@ -1,0 +1,31 @@
+function XO(str) {
+    let arr = str.toLowerCase().split('')
+    let countX = 0
+    let countY = 0
+
+
+    for(let i =0;i<str.length;i++){
+        if(arr[i].includes('x')){
+            countX++
+        }else if(arr[i].includes('o')){
+            countY++
+        }
+    }
+console.log(countX)
+    console.log(countY)
+
+    if(countX ===countY){
+        return true
+    }else{
+        return false
+    }
+
+
+
+  //
+  // let a = str.split("").reduce((r, c) => (r[c] = (r[c] || 0) + 1, r), {});
+    // console.log(a)
+    // return a;
+}
+
+console.log(XO("xXoO"));
