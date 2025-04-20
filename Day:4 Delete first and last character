@@ -1,0 +1,17 @@
+function array(string) {
+   let newStr = string.split(',').slice(1,-1).join(' ');
+    console.log(newStr)
+    if(string ===''){
+        return null
+    }
+    if(string.length ===1 ){
+        return null
+    }
+    else if(newStr.length === 0 ){
+         console.log("Какая то дичь")
+        return null
+    }else if(newStr.length >0 ){
+      return newStr
+    }
+
+}
