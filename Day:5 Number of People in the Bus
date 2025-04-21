@@ -1,0 +1,19 @@
+var number = function(busStops){
+    let a = busStops.reduce((prev,item)=>{
+        return prev.concat(item)
+    })
+    let sum1 = 0
+    let sum2 =0
+    for(let i=0;i<a.length;i+=2){
+    sum1+=a[i]
+    }
+
+    for(let i=1;i<a.length;i+=2){
+        sum2+=a[i]
+    }
+    console.log(sum1)
+    console.log(sum2)
+
+    return sum1-sum2
+
+}
