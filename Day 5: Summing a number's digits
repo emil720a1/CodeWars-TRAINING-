@@ -1,0 +1,36 @@
+//Write a function which takes a number as input and returns the sum of the absolute value of each of the number's decimal digits.
+
+
+function sumDigits(number) {
+
+    let res=0;
+    if (number < 0) {
+        number = Math.abs(number);
+    }
+    let str = String(number).split("")
+    console.log(str)
+
+
+    let a = +str[0]
+
+    let b = +str[1]
+
+
+
+    if(str.length>1 && str.length<=2){
+        res =  a+b
+    }else if (str.length===1){
+        res = number
+    }else if(str.length>2){
+        for(let i=0;i<str.length;i++){
+            res+=Number((str[i]))
+        }
+    }
+    console.log(res)
+    return res
+
+
+
+
+
+}
