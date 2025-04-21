@@ -1,0 +1,27 @@
+function largestPairSum (numbers) {
+    let newArray = [];
+    let maxOne = Math.max(...numbers)
+    console.log('max: ',maxOne)
+
+
+    newArray.push(maxOne)
+
+    let b = numbers.indexOf(maxOne);
+   numbers.splice(b,1)
+    let maxTwo = Math.max(...numbers)
+
+if(maxTwo ){
+    newArray.push(maxTwo)
+}else{
+    return 0
+}
+    console.log('new: ',newArray)
+let oneEl = newArray[0]
+    let twoEl = newArray[1]
+    let sum= oneEl + twoEl
+    return sum
+
+}
+
+let arr = [10,14,2,23,19]
+console.log(largestPairSum(arr))
