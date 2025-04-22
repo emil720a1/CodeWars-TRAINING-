@@ -1,0 +1,16 @@
+function evenNumbers(array, number) {
+    let newArr = [] // Пустой массив который будет использоваться для последних четных чисел
+
+    let oddNumbers = [] // Масив для подсчета в целом всех парных чисел
+
+    for(let i = 0; i < array.length; i++) {  // Цикл: находим парные числа
+        if(array[i] % 2 ===0) {
+            oddNumbers.push(array[i])
+        }
+    }
+    console.log(oddNumbers)
+    newArr = [...oddNumbers.slice(-number), ...newArr] // Оставляем из массива только последние парные элементы,( если n===3 то выведет 3 елемента)
+
+    console.log("newArr: ", newArr);
+    return newArr; // Возвращаем новый массив последних n чисел 
+}
