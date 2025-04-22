@@ -1,0 +1,9 @@
+function sortMyString(S) {
+    let a = S.split('').filter((x,i) => i % 2 === 0).join('');
+    let b= S.split('').filter((x,i) => i % 2 !== 0).join('');
+    console.log("Массив четных чисел: ",a)
+    console.log("Массив нечетных чисел: ", b)
+let result = a + ' ' + b
+
+    return result;
+}
