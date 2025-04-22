@@ -1,0 +1,8 @@
+function sumOfMinimums(arr) {
+let a = 0
+arr.forEach(student => {
+    a+=Math.min(...student);
+})
+console.log(a)
+return a
+}
