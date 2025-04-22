@@ -1,0 +1,26 @@
+function minSum(arr) {
+    let sort = arr.sort((a, b) => a - b); //Сортируем массив от меньшего к большему
+
+    const part1 = sort.slice(0, sort.length / 2); //Делим массим на 2 части - (1 часть)
+    const part2 = sort.slice(sort.length / 2).sort((a, b) => b-a); //  - (2 часть)
+
+    console.log("First Arr: ",part1);
+    console.log("Second Arr: ",part2);
+
+    let res=0 //Результат
+    for(let i =0;i<part1.length;i++){
+            res+=(part1[i]*part2[i]);//Множим массив на массив(только одинаковые индексы 0 на 0, 1 на 1 и тд..)
+    }
+
+    console.log('Res: ',res);
+    return res; // Возвращаем результат
+
+}
+
+let arr = [9,2,8,7,5,4,0,6]
+console.log(minSum(arr))
+
+
+
+//ПРИМЕР 
+// minSum({5,4,2,3}) ==> return (22) 
