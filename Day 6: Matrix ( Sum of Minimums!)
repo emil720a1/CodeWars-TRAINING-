@@ -6,3 +6,7 @@ arr.forEach(student => {
 console.log(a)
 return a
 }
+
+
+
+//Этот же код через reduce()
