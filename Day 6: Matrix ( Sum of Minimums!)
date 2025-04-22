@@ -10,3 +10,8 @@ return a
 
 
 //Этот же код через reduce()
+
+function sumOfMinimums(arr) {
+  return arr.reduce((p, c) => p + Math.min(...c), 0);
+}
+// Это короткая версия(Не мой код)
