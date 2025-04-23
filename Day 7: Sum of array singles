@@ -1,0 +1,8 @@
+function repeats(arr){
+    let sum = 0;
+let a = arr.filter((el, i, arr) => arr.indexOf(el) === arr.lastIndexOf(el))
+    for(let i=0;i<a.length;i++){
+        sum+=a[i];
+    }
+    return sum;
+};
