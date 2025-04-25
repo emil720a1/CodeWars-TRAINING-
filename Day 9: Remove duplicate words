@@ -1,0 +1,5 @@
+function removeDuplicateWords (s) {
+  let arr = [...new Set(s.split(' '))].join(" ")
+
+    return arr
+}
