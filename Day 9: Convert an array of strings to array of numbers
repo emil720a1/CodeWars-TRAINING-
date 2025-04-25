@@ -1,0 +1,16 @@
+//Мой короткий код:
+function toNumberArray(stringarray){
+let a = stringarray.map(Number)
+    return a
+}
+
+//Мой длинный код:
+function toNumberArray(stringarray){
+
+ let a = stringarray.map(item => parseInt(item))
+    return a;
+
+}
+
+let str = ['23','32','23']
+console.log(toNumberArray(str))
