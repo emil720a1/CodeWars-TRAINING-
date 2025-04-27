@@ -1,0 +1,20 @@
+function order(words){
+    let arr = words.split(' ')
+    let b = []
+
+       for(let i=0;i<=arr.length;i++){
+
+       for(let j=0;j<arr.length;j++){
+           if(arr[j].indexOf(i)>=0){
+            b.push(arr[j])
+           }
+       }
+   }
+       return b.join(" ")
+
+}
+
+
+let str = "is2 Thi1s T4est 3a"
+console.log(order(str));
+
