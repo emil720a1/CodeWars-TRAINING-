@@ -1,0 +1,11 @@
+let el = 'rate-5356';
+// numEl изначально строка, чтобы числа не складывались друг с другом, а приписывались
+let numEl = '';
+// Перебираем каждый символ. Если символ можно распарсить как номер, приписываем к строке
+for (let  index in el) {
+    if (!isNaN(parseInt(el[index]))) {
+        numEl += el[index]
+    }
+}
+parseInt(numEl);
+console.log(numEl);
