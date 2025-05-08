@@ -1,0 +1,8 @@
+function invertHash(hash) {
+const result = {}
+
+    Object.entries(hash).forEach(([key, value]) => {
+        result[value] = key
+    })
+    return result
+}
