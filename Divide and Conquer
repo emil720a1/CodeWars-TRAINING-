@@ -1,0 +1,25 @@
+function divCon(x){
+    let arrNum =[]
+    let arrStr = []
+    for(let i=0;i<x.length;i++) {
+        if (typeof x[i] === 'string') {
+            arrStr.push(x[i])
+        } else if (typeof x[i] === 'number') {
+            arrNum.push(x[i])
+        }
+    }
+    let sumStr = 0
+    for(let i=0;i<arrStr.length;i++){
+        sumStr+=parseInt(arrStr[i])
+    }
+    console.log("sum of str:", sumStr)
+
+
+    let sumNum = 0
+    for(let i=0;i<arrNum.length;i++){
+        sumNum+=arrNum[i]
+    }
+    console.log("sum of num:", sumNum)
+    return sumNum-sumStr
+}
+
