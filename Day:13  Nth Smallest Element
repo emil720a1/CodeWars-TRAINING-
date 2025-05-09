@@ -1,0 +1,6 @@
+function nthSmallest(arr, pos){
+        let sort = arr.sort((a,b) => a-b);
+        console.log(sort);
+            return sort[pos-1];
+
+}
