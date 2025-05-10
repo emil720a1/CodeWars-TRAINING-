@@ -1,0 +1,9 @@
+
+function findOdd(arr) {
+    let result = arr.map(Number).reduce((r, c) => (r[c] = (r[c] || 0) + 1, r), {});
+    console.log("Object: ",result)
+    let res = Object.values(result).filter((value) => value % 2 !==0);
+    console.log(res)
+    let key = Object.keys(result).find(key=> result[key] === res[0])
+    return +key
+}
