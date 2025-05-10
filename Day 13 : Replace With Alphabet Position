@@ -1,0 +1,22 @@
+function alphabetPosition(text) {
+    let a = text.split('')
+    console.log(a)
+    let b = []
+    let charCode= [];
+    for(let i=0;i<a.length;i++){
+            charCode.push(text.charCodeAt([i]));
+    }
+    console.log("charCode: ",charCode)
+    for(let i=0;i<charCode.length;i++){
+        if(charCode[i]>=65 && charCode[i]<=90){
+            b.push(charCode[i]-65+1)
+        }else if(charCode[i]>=97 && charCode[i]<=122){
+            b.push(charCode[i]-97+1)
+        }
+    }
+
+
+    return (b).join(' ')
+// return String(b.split(''));
+
+}
