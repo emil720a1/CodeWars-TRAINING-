@@ -1,0 +1,11 @@
+function solution(string) {
+    let a = string.split('');
+    console.log("a: ",a)
+    for(let i=0;i<a.length;i++){
+        if (a[i] === a[i].toUpperCase()){
+           a[i] = ' ' + a[i]
+        }
+    }
+       return a.join('')
+
+}
