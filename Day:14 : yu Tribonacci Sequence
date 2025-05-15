@@ -1,0 +1,10 @@
+function tribonacci(signature,n){
+  let result = [...signature]
+   if(n<3){
+     return result.slice(0,n-3)
+   }
+  for(let i=0;i<n -3;i++){
+    result.push(result.slice(i,i+3).reduce((acc,val) acc + val, 0))
+  }
+  return result
+}
