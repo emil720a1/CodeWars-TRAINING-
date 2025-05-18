@@ -1,0 +1,19 @@
+function inSphere(coords, radius) {
+    let a =[];
+    let b = Math.pow(radius, 2);
+    coords.forEach(coord => {
+        a.push(Math.pow(coord, 2));
+    })
+    console.log(a)
+    let sum = a.reduce((a,b)=> a+b,0)
+    console.log(sum)
+    if(sum<=b){
+        return true;
+    }else if(b===0 && sum===0){
+        return true;
+    }else if(sum<0){
+        return false;
+    }else{
+        return false;
+    }
+}
