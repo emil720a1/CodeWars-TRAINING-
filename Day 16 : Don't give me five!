@@ -1,0 +1,22 @@
+
+console.log("1: ", dontGiveMeFive(1, 20));
+console.log("2: ", dontGiveMeFive(1,1000));
+console.log("3: ", dontGiveMeFive(4, 17));
+console.log("4: ", dontGiveMeFive(1,9));
+console.log("5: ", dontGiveMeFive(50,59));
+console.log("6: ", dontGiveMeFive(90,99));
+console.log("7: ", dontGiveMeFive(1,100));
+
+
+    function dontGiveMeFive(start, end){
+        let arr = []
+        for(let i = start; i <= end; i++){ // we fills array elements 1 by 9
+            arr.push(i)
+        }
+         let strArr = arr.map((a)=> Math.abs(a).toString()) // we do from num array to string array
+        console.log("old strArr: ",strArr)
+
+                strArr = strArr.filter((x)=> !x.includes("5")).map(a => +a) //we check if array no included elements with 5
+        console.log("new strArr: ",strArr)
+       return strArr.length // return arr
+    }
